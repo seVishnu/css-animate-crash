@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent {
+  background-color: aqua;
+  height: 400px;
+  width: 400px;
+  max-width: 800px;
+  margin: 50px auto;
+}
+.child {
+  height: 50%;
+  width: 50%;
+  background-color: teal;
+}
