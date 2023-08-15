@@ -14,9 +14,25 @@
   height: 50%;
   width: 50%;
   background-color: teal;
-  transition: transform 1s linear 0s;
+  /* transition: transform 1s linear 0s; */
   /* transition: select what to transit:: duration :: timing function :: delay; */
+  animation: leftToRight 1s ease-in forwards infinite alternate 0.5s;
 }
 .parent:hover .child {
-  transform: translateX(100%);
+  animation-play-state: paused;
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
