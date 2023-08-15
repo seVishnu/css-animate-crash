@@ -14,4 +14,9 @@
   height: 50%;
   width: 50%;
   background-color: teal;
+  transition: transform 1s linear 0s;
+  /* transition: select what to transit:: duration :: timing function :: delay; */
+}
+.parent:hover .child {
+  transform: translateX(100%);
 }
